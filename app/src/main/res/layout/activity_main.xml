@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/txt_black"
+    android:orientation="vertical"
+   >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="10dp"
+       android:background="@drawable/round_corner_indiactor"
+       android:padding="2dp">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:id="@+id/txt_month"
+       android:textSize="13sp"
+       android:textColor="@android:color/white"
+       android:text="jan"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:background="@color/txt_black"/>
+
+
+   <LinearLayout
+       android:id="@+id/week_days"
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:orientation="horizontal"
+       android:layout_marginTop="2dp"
+       android:background="@color/txt_black">
+
+
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:layout_centerInParent="true"
+             android:textColor="@color/date_not_in_month_grey"
+             android:id="@+id/week_day"
+             android:text="WK"
+             />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="10sp"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:textColor="@color/date_not_in_month_grey"
+             android:id="@+id/week_sunday"
+             android:text="S"
+             />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="10sp"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:textColor="@color/date_not_in_month_grey"
+             android:id="@+id/week_monday"
+             android:text="M"
+             />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="10sp"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:textColor="@color/date_not_in_month_grey"
+             android:id="@+id/week_tuesday"
+             android:text="T"
+             />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="10sp"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:textColor="@color/date_not_in_month_grey"
+             android:id="@+id/week_wednesday"
+             android:text="W"
+             />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="10sp"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:textColor="@color/date_not_in_month_grey"
+             android:id="@+id/week_thursday"
+             android:text="T"
+             />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="10sp"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:textColor="@color/date_not_in_month_grey"
+             android:id="@+id/week_friday"
+             android:text="F"
+             />
+      </RelativeLayout>
+
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="10sp"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:id="@+id/week_saturday"
+             android:textColor="@color/date_not_in_month_grey"
+             android:text="S"
+             />
+      </RelativeLayout>
+
+
+   </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="8"
+
+       android:background="@color/txt_black">
+
+      <LinearLayout
+          android:id="@+id/week_count"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@color/txt_black">
+
+         <RelativeLayout
+             android:id="@+id/wk1_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             >
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/week_count_grey"
+                android:text="WK 1"
+
+                />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/wk2_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             >
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/week_count_grey"
+                android:text="WK 2"
+                android:id="@+id/textView" />
+         </RelativeLayout>
+         <RelativeLayout
+             android:id="@+id/wk3_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             >
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/week_count_grey"
+                android:text="WK 3"
+                />
+         </RelativeLayout>
+         <RelativeLayout
+             android:id="@+id/wk4_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+
+             >
+
+            <TextView
+                android:layout_marginTop="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/week_count_grey"
+                android:text="WK 4"
+                />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/wk5_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             >
+
+            <TextView
+                android:layout_marginTop="27dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="10sp"
+                android:textColor="@color/week_count_grey"
+                android:text="WK 5"
+                />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/wk6_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             >
+
+            <TextView
+                android:layout_marginTop="28dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:textColor="@color/week_count_grey"
+                android:text="WK 6"
+                />
+         </RelativeLayout>
+
+      </LinearLayout>
+
+
+      <android.support.v4.view.ViewPager
+
+          android:id="@+id/view_pager"
+          android:layout_width="0dp"
+          android:layout_weight="7"
+          android:layout_height="wrap_content"
+          android:background="@color/txt_black">
+
+      </android.support.v4.view.ViewPager>
+   </LinearLayout>
+
+   </LinearLayout>
+</LinearLayout>
